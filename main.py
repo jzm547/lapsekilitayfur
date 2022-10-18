@@ -2,17 +2,15 @@ import os
 Loop="True"
 while Loop:
     print('''
-._____________________________________________________.          
-|Welcome to Encoder/Decoder Program written in Pyhton.|
-|This program  encodes/decodes  given  text in various|
-|methods. It will encode/decode in Latin or in Turkish|
-|succesively. The methods included are:               |
-|                                                     | 
-|1. Rotn Cipher                                       |
-|2. Vigenere Cipher                                   |
-|3. Prime Number Indexing Cipher                      |
-·_____________________________________________________·          
-| Please choose your method:                          |                         
+        
+Welcome to Message Conversion Program written in Pyhton.
+This program  enrypts/decrypts  given  text in various
+methods.  The methods included are:               
+|                                                     
+1. Rotn Cipher                                       
+2. Vigenere Cipher                                   
+                              
+ Please choose your method:                                                  
     ''')
 
     x=int(input())
@@ -31,13 +29,6 @@ while Loop:
     ****************************
       ''')
         os.system("python3 vigenere.py")
-    elif x==3:
-        print('''
-    ********************************
-    * Prime Number Encoder/Decoder *
-    ********************************
-      ''')  
-        os.system("python3 primenumber.py")
     else:
         print("please enter 1,2 or 3!")
     
